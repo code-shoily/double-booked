@@ -175,3 +175,12 @@
                                              :max    40
                                              :left   nil
                                              :right  nil}}})
+
+(def before-ll {})
+(def after-ll {})
+(def before-lr {})
+(def after-lr {})
+(def before-rl {})
+(def after-rl {})
+(def before-rr {})
+(def after-rr {})

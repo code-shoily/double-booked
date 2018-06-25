@@ -58,8 +58,6 @@
                                          :height (inc (get-max-height {:left a :right e}))))]
            res)))
 
-(defn right-rotate [node] :right_)
-
 (defn right-rotate [node]
   (match [node]
          [({:left  ({:left  d
