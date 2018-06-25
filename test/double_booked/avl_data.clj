@@ -261,11 +261,53 @@
                          :finish 21
                          :height 0
                          :max    21
-                         :left   nil
-                         :right  nil}})
+                         :left   {:id     :d
+                                  :start  17
+                                  :finish 18
+                                  :height 1
+                                  :max    25
+                                  :left   {:id     :f
+                                           :start  16
+                                           :finish 19
+                                           :height 0
+                                           :max    19
+                                           :left   nil
+                                           :right  nil}
+                                  :right  {:id     :g
+                                           :start  18
+                                           :finish 25
+                                           :height 0
+                                           :max    25
+                                           :left   nil
+                                           :right  nil}}
+                         :right  {:id     :e
+                                  :start  24
+                                  :finish 31
+                                  :height 0
+                                  :max    31
+                                  :left nil
+                                  :right nil}}})
 (def after-lr {})
 (def before-rl {})
-(def after-rl {})
+(def after-rl {:id     :a
+               :start  15
+               :finish 17
+               :height 3
+               :max    31
+               :left {:id     :b
+                      :start  12
+                      :finish 14
+                      :height 0
+                      :max    14
+                      :left nil
+                      :right nil}
+               :right {:id     :c
+                       :start  19
+                       :finish 21
+                       :height 2
+                       :max    31
+                       :left   nil
+                       :right  {}}})
 (def before-rr {:id     :a
                 :start  15
                 :finish 17
