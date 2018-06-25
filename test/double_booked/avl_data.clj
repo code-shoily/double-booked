@@ -305,7 +305,49 @@
                          :max    21
                          :left   nil
                          :right  nil}})
-(def after-lr {})
+(def after-lr {:id     :e
+               :start  13
+               :finish 18
+               :height 2
+               :max    21
+               :left   {:id     :b
+                        :start  10
+                        :finish 14
+                        :height 1
+                        :max    15
+                        :left   {:id     :d
+                                 :start  9
+                                 :finish 11
+                                 :height 0
+                                 :max    11
+                                 :left   nil
+                                 :right  nil}
+                        :right  {:id     :f
+                                 :start  11
+                                 :finish 15
+                                 :height 0
+                                 :max    15
+                                 :left   nil
+                                 :right  nil}}
+               :right  {:id     :a
+                        :start  15
+                        :finish 17
+                        :height 1
+                        :max    21
+                        :left   {:id     :g
+                                 :start  14
+                                 :finish 21
+                                 :height 0
+                                 :max    21
+                                 :left   nil
+                                 :right  nil}
+                        :right  {:id     :c
+                                 :start  18
+                                 :finish 21
+                                 :height 0
+                                 :max    21
+                                 :left   nil
+                                 :right  nil}}})
 
 (def before-rl {:id     :a
                 :start  15
@@ -350,7 +392,49 @@
                                   :max    31
                                   :left   nil
                                   :right  nil}}})
-(def after-rl {})
+(def after-rl {:id     :d
+               :start  17
+               :finish 18
+               :height 2
+               :max    31
+               :left   {:id     :a
+                        :start  15
+                        :finish 17
+                        :height 1
+                        :max    19
+                        :left   {:id     :b
+                                 :start  12
+                                 :finish 14
+                                 :height 0
+                                 :max    14
+                                 :left   nil
+                                 :right  nil}
+                        :right  {:id     :f
+                                 :start  16
+                                 :finish 19
+                                 :height 0
+                                 :max    19
+                                 :left   nil
+                                 :right  nil}}
+               :right  {:id     :c
+                        :start  19
+                        :finish 21
+                        :height 1
+                        :max    31
+                        :left   {:id     :g
+                                 :start  18
+                                 :finish 25
+                                 :height 0
+                                 :max    25
+                                 :left   nil
+                                 :right  nil}
+                        :right  {:id     :e
+                                 :start  24
+                                 :finish 31
+                                 :height 0
+                                 :max    31
+                                 :left   nil
+                                 :right  nil}}})
 
 (def before-rr {:id     :a
                 :start  15

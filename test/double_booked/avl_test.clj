@@ -61,4 +61,6 @@
 
 (deftest balance-test
   (testing "balance rotates the subtree to balance"
-    (is (= (balance {} 0) :balance))))
+    (is (= (balance {} 0) :balance))
+
+    ))
