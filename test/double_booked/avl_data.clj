@@ -393,4 +393,46 @@
                                            :max    35
                                            :left   nil
                                            :right  nil}}}})
-(def after-rr {})
+(def after-rr {:id     :c
+               :start  18
+               :finish 21
+               :height 2
+               :max    35
+               :left   {:id     :a
+                        :start  15
+                        :finish 17
+                        :height 1
+                        :max    20
+                        :left   {:id     :b
+                                 :start  12
+                                 :finish 14
+                                 :height 0
+                                 :max    14
+                                 :left   nil
+                                 :right  nil}
+                        :right  {:id     :d
+                                 :start  16
+                                 :finish 20
+                                 :height 0
+                                 :max    20
+                                 :left   nil
+                                 :right  nil}}
+               :right  {:id     :e
+                        :start  24
+                        :finish 31
+                        :height 1
+                        :max    35
+                        :left   {:id     :f
+                                 :start  22
+                                 :finish 29
+                                 :height 0
+                                 :max    29
+                                 :left   nil
+                                 :right  nil}
+                        :right  {:id     :g
+                                 :start  26
+                                 :finish 35
+                                 :height 0
+                                 :max    35
+                                 :left   nil
+                                 :right  nil}}})
