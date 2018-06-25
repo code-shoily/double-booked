@@ -20,3 +20,13 @@
            1543665600000))
     (is (= (convert-date "2018-12-01" :format "YYYY-MM-dd")
            1543622400000))))
+
+(deftest overlaps?-test
+  (testing "Test a set of intervals for overlapping"
+    (let [input [[{:start 3 :finish 7} {:start 4 :finish 6}]
+                 [{:start 30 :finish 47} {:start 14 :finish 16}]
+                 [{:start 13 :finish 17} {:start 4 :finish 16}]
+                 [{:start 3 :finish 17} {:start 14 :finish 16}]]
+          expected [true false true true]]
+      (doall (for [[i1 i2] input e expected]
+               (is (= (overlaps? i1 i2) e)))))))
