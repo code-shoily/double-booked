@@ -303,6 +303,27 @@
                          :finish 21
                          :height 0
                          :max    21
+                         :left   nil
+                         :right  nil}})
+(def after-lr {})
+
+(def before-rl {:id     :a
+                :start  15
+                :finish 17
+                :height 3
+                :max    31
+                :left   {:id     :b
+                         :start  12
+                         :finish 14
+                         :height 0
+                         :max    14
+                         :left   nil
+                         :right  nil}
+                :right  {:id     :c
+                         :start  19
+                         :finish 21
+                         :height 2
+                         :max    31
                          :left   {:id     :d
                                   :start  17
                                   :finish 18
@@ -329,27 +350,8 @@
                                   :max    31
                                   :left   nil
                                   :right  nil}}})
-(def after-lr {})
-(def before-rl {})
-(def after-rl {:id     :a
-               :start  15
-               :finish 17
-               :height 3
-               :max    31
-               :left   {:id     :b
-                        :start  12
-                        :finish 14
-                        :height 0
-                        :max    14
-                        :left   nil
-                        :right  nil}
-               :right  {:id     :c
-                        :start  19
-                        :finish 21
-                        :height 2
-                        :max    31
-                        :left   nil
-                        :right  {}}})
+(def after-rl {})
+
 (def before-rr {:id     :a
                 :start  15
                 :finish 17
