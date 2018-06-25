@@ -4,33 +4,19 @@ FIXME: description
 
 ## Installation
 
-Download from http://example.com/FIXME.
+    * Make sure you have `leiningen` installed in your system
+    * Clone this repository `git clone https://github.com/code-shoily/double-booked`
+    * `cd` into the terminal and `lein repl`
+    * Follow the documentation
+    * Run `lein test` to test
 
 ## Usage
 
-FIXME: explanation
+    $ java -jar double_booked-0.5.0-standalone.jar [args]
 
-    $ java -jar double_booked-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
 
 ## License
 
-Copyright © 2018 FIXME
+Copyright © 2018 Mafinar Khan
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the Eclipse Public License version 1.0
