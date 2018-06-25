@@ -8,11 +8,11 @@ Given a sequence of events, each having a start and end time, write a program th
 
 ## Installation
 
-    * Make sure you have `leiningen` installed in your system
-    * Clone this repository `git clone https://github.com/code-shoily/double-booked`
-    * `cd` into the terminal and `lein repl`
-    * Follow the documentation
-    * Run `lein test` to test
+    - Make sure you have `leiningen` installed in your system
+    - Clone this repository `git clone https://github.com/code-shoily/double-booked`
+    - `cd` into the terminal and `lein repl`
+    - Follow the documentation
+    - Run `lein test` to test
 
 ## Usage
 
