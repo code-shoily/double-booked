@@ -22,6 +22,7 @@
                                              :start  20
                                              :finish 31
                                              :max    31
+                                             :height 0
                                              :left   nil
                                              :right  nil}
                                     :right  {:id     :e
@@ -64,6 +65,7 @@
                                             :start  20
                                             :finish 31
                                             :max    31
+                                            :height 0
                                             :left   nil
                                             :right  nil}}
                           :right  {:id     :e

@@ -46,16 +46,31 @@
     (assoc node :max max)))
 
 ;; --------------------------------------- BALANCERS
-(defn left-rotate [node] :left-rotate)
-(defn right-rotate [node] :right-rotate)
+
+(defn left-rotate [node]
+  (match [node]
+         [({:left  b
+            :right ({:left  d
+                     :right e} :as c)} :as a)]
+         (let [a (refresh-max (assoc a :right d
+                                       :height (inc (get-max-height {:left b :right d}))))
+               res (refresh-max (assoc c :left a
+                                         :height (inc (get-max-height {:left a :right e}))))]
+           res)))
+
+(defn right-rotate [node] :right_)
+
+(defn right-rotate [node]
+  (match [node]
+         [({:left  ({:left  d
+                     :right e} :as b)
+            :right c} :as a)]
+         (let [a (refresh-max (assoc a :left e
+                                       :height (inc (get-max-height {:left  e
+                                                                     :right c}))))
+               res (refresh-max (assoc b :right a
+                                         :height (inc (get-max-height {:left  d
+                                                                       :right a}))))]
+           res)))
 (defn balance [node key] :balance)
 ;; --------------------------------------- INSERTION
-
-
-
-
-
-
-
-
-
