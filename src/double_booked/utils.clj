@@ -22,4 +22,10 @@
       (str->date format)
       date->long))
 
+(defn overlaps? [{s1 :start f1 :finish}
+                 {s2 :start f2 :finish}]
+  "Checks if two nodes overlaps"
+  (and (< s1 f2)
+       (< s2 f1)))
+
 
